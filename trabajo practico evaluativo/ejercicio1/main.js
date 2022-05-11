@@ -17,8 +17,8 @@ function calcular(){
     if (auto == 2560000){
         resultado = 2560000 - ((10 * 2560000) / 100)
     }
-// mostramos el resultado en el elemento H1
-document.getElementById("h_resultado").textContent = resultado
+    // mostramos el resultado en el elemento H1
+    document.getElementById("h_resultado").textContent = resultado
 
     
 }
