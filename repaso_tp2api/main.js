@@ -6,7 +6,7 @@ const obtener = async () => {
 
     let filas = []
 
-    provincias_seleccionadas.forEach((element,index) => {
+    provincias_seleccionadas.provincias.forEach((element,index) => {
         
         let fila =
         `<tr>
@@ -19,3 +19,5 @@ const obtener = async () => {
 
      document.getElementById("tbl_body").innerHTML = filas.join('')
 }
+
+obtener()
