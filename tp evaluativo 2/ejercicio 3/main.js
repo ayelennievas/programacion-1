@@ -13,8 +13,7 @@ const framework = {
 const mostrar = () =>{
 
     //declaro variables con el uso de Destructuring Object
-    const { titulo } = framework
-    const { nombre } = framework
+    const { titulo, nombre } = framework
     const { lenguaje, patron, spa } = framework.características
     
     //imprimo en consola

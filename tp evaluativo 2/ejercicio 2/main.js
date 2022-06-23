@@ -20,7 +20,10 @@ console.log(criptos)
 
 const longitudArreglo = criptos.length
 const ultimoElemento = criptos[longitudArreglo-1]
-const elemento = criptos[7]
+
+//buscamos  el indice (pos) de un elemento
+let indice = criptos.indexOf("Helium")
+const elemento = criptos[indice]
 
 function mostrar(){
 
