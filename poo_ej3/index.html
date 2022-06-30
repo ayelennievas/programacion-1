@@ -11,7 +11,7 @@
 
     <nav class="navbar navbar-dark" style="background-color:cornflowerblue;">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1" style="color:black ;">Nav</span>
+          <span class="navbar-brand mb-0 h1" style="color:black ;">Productos</span>
         </div>
     </nav>
 
@@ -25,20 +25,21 @@
 
                     <div class="mb-3">
                         <label class="form-label" for="">Descripcion</label>
-                        <input class="form-control" type="text">
+                        <input id="inp_descripcion"class="form-control" type="text">
                     </div>
 
                     <div class="mb-3">
                         <label class="form-label" for="">Precio de venta</label>
-                        <input class="form-control" type="text">
+                        <input id="inp_precio_venta" class="form-control" type="text">
                     </div>
 
                     <div class="mb-3">
 
                         <label class="form-label" for="">Categoria
 
-                            <select class="form-select" name="" id="">
-
+                            <select item id="slt_cat" class="form-select" name="" id="">
+                                
+                                <option selected>Seleccione</option>
                                 <option value="1">Heladera</option>
                                 <option value="2">TV</option>
                                 <option value="3">Lavarropas</option>
@@ -55,7 +56,7 @@
 
        </div>
 
-       <button>Guardar</button>
+       <button id="btn_guardar">Guardar</button>
 
     </div>
 
