@@ -6,6 +6,7 @@ function guardar(){
     let precio_venta = document.getElementById("inp_precio_venta").value
     let categoria = document.getElementById("slt_cat").value
 
+    //instancia
     let producto = new Producto(descripcion,precio_venta,categoria)
 
     //invocamos(ejecutamos) al metodo guardar_producto()
