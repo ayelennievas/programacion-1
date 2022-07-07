@@ -40,3 +40,16 @@ function eliminar(){
 }
 
 document.getElementById("btn_eliminar").addEventListener("click",eliminar)
+
+
+function actualizar(){
+
+    //creamos la instancia producto
+    let producto = new Producto()
+
+    //a traves de la instancia accedemos e invocamos el metodo
+    //actualizar_producto() existen en archivo producto.js
+    producto.actualizar_producto()
+}
+
+document.getElementById("btn_actualizar").addEventListener("click",actualizar)
