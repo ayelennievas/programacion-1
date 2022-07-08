@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insumos para uñas</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:lightskyblue ;">
+    <nav class="navbar navbar-dark" style="background-color:deeppink;">
+        <div class="container-fluid">
+          <a class="navbar-brand">Insumos de Uñas</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar insumos" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+    <br>
+
+    <div class="container">
+
+    <h3>Carga del insumo</h3>
+       
+    <div class="row">
+
+        <div class="col-lg-4">
+
+            <div class="mb-3">
+
+                <form id="form_insumo">
+                     
+                    <div class="mb-3">
+                        <label for="">Descripcion del insumo</label>
+                        <input id="inp-d" class="form-control" type="text">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="">Precio del insumo</label>
+                        <input id="inp-precio" class="form-control" type="text">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="">URL Imagen del insumo</label>
+                        <input id="inp-url" class="form-control" type="text">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="">Categoria
+
+                            <select item id="slt-categoria" class="form-select" name="" id="">
+                                
+                                <option selected>Seleccione</option>
+                                <option value="Esmaltes">Esmaltes</option>
+                                <option value="Limas">Limas</option>
+                                <option value="Cabinas">Cabinas UV/LED</option>
+                                <option value="Pinceles">Pinceles Nail Art</option>
+
+                            </select>
+
+                        </label>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+            <table class="table table-primary">
+
+                <thead>
+                  <tr class="table-danger" >
+                      <th>Nº</th>
+                      <th>Descripcion</th>
+                      <th>Precio</th>
+                      <th>Imagen</th>
+                      <th>Categoria</th>
+                      <th>Acciones</th>
+                  </tr>
+                </thead>
+
+                <tbody id="t_body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <button id="btn-guardar" class="btn btn-outline-success">Guardar</button>
+    <button style="display:none ;" id="btn_refrescar" class="btn btn-outline-dark">Actualizar</button>
+
+    </div>
+
+    <div id="modal_" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Eliminar insumo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>¿Desea realizar esta accion?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button id="btn_eliminar" type="button" class="btn btn-primary">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <script src="main.js" type="module"></script>
+ <script src="auxiliar.js"></script>
+</body>
+</html>
