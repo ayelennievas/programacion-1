@@ -32,3 +32,12 @@ function eliminarinsumo(){
 }
 
 document.getElementById("btn_eliminar").addEventListener("click",eliminarinsumo)
+
+function actualizar(){
+
+    let insumo = new Insumo()
+
+    insumo.actualizar_insumo()
+}
+
+document.getElementById("btn_refrescar").addEventListener("click",actualizar)
