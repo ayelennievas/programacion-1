@@ -38,7 +38,7 @@ export default class Insumo {
 
     this.obtener_insumos()
 
-    
+    this.vaciar_formulario()
 
     }
 
@@ -85,5 +85,33 @@ export default class Insumo {
         localStorage.setItem("insumos", JSON.stringify(lista_insumos))
 
         this.obtener_insumos()
+    }
+
+    actualizar_insumo(){
+
+      let indice = localStorage.getItem("indice")
+
+      let listado_insumos = JSON.parse(localStorage.getItem("insumos"))
+
+      listado_insumos[indice].descripcion = document.getElementById("inp-d").value
+      listado_insumos[indice].precio = document.getElementById("inp-precio").value
+      listado_insumos[indice].imagen = document.getElementById("inp-url").value
+      listado_insumos[indice].categoria = document.getElementById("slt-categoria").value
+
+      localStorage.setItem("insumos",JSON.stringify(listado_insumos))
+
+      this.obtener_insumos()
+
+      document.getElementById("btnguardar").style.display = "block"
+
+      document.getElementById("btn_refrescar").style.display = "none"
+
+      this.vaciar_formulario()
+
+    }
+
+    vaciar_formulario(){
+
+      document.getElementById("form_insumo").reset()
     }
 }
