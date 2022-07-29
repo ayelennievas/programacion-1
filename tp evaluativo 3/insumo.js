@@ -55,7 +55,7 @@ export default class Insumo {
                 <td>${index+1}</td>
                 <td>${element.descripcion}</td>
                 <td>${element.precio}$</td>
-                <td> <img src="${element.imagen}" class="img-fluid" style="width:3rem" /> </td>
+                <td> <img src="${element.imagen}" class="img-fluid"  /> </td>
                 <td>${element.categoria}</td>
                 <td>
 

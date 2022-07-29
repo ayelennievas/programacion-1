@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra del insumo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+  
+<body style="background-color:cornflowerblue">
+
+    <nav class="navbar navbar-dark" style="background-color:deeppink;">
+        <div class="container-fluid">
+          <a class="navbar-brand">Insumos de Uñas</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar insumos" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+<div class="container mt-3">
+
+        
+
+    <div class="row">
+
+        <div class="col-lg-8">
+
+            <h4>Productos</h4>
+
+            <div class="row" id="insumo"></div>  
+        
+        </div>  
+            
+        
+        <div class="col-lg-4">
+
+            <h4>Pedidos</h4>
+
+            <table class="table table-primary">
+
+                <thead>
+                        <tr>
+
+                            <th>Encargo</th>
+                            <th>Insumo</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                             
+                        </tr>
+                        <tr>
+                            <th>TOTAL</th>
+                        </tr>
+                </thead>
+
+                <tbody id="tbody">
+                         
+                </tbody>
+
+            </table>
+
+            <button type="button" class="btn btn-outline-dark">Finalizar pedido</button>
+
+        </div>
+
+    </div>
+    
+        
+</div>
+
+<script src="main2.js"></script> 
+</body>
+</html>
