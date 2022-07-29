@@ -40,6 +40,7 @@ export default class Insumo {
 
     this.vaciar_formulario()
 
+
     }
 
     obtener_insumos(){
@@ -93,6 +94,7 @@ export default class Insumo {
 
       let listado_insumos = JSON.parse(localStorage.getItem("insumos"))
 
+
       listado_insumos[indice].descripcion = document.getElementById("inp-d").value
       listado_insumos[indice].precio = document.getElementById("inp-precio").value
       listado_insumos[indice].imagen = document.getElementById("inp-url").value
@@ -114,4 +116,4 @@ export default class Insumo {
 
       document.getElementById("form_insumo").reset()
     }
-}
+  }

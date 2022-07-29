@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const obtener = async () => {
  
     const insumos_seleccionados = JSON.parse(localStorage.getItem("insumos"))
@@ -5,11 +6,24 @@ const obtener = async () => {
     let columnas = []
 
     insumos_seleccionados.forEach( (element,index) => {
+=======
+
+const obtener = async () => {
+
+    // const insumo = await fetch ('https://fakestoreapi.com/products/category/' + categoria)
+ 
+    const insumos_seleccionados = JSON.parse(localStorage.getItem("insumos"))//await insumo.json()
+
+    let columnas = []
+
+    insumos_seleccionados.forEach(element => {
+>>>>>>> ace91b87b4e8a1b8eb69ebd9628ea585ecf19eb9
 
 
         let columna =      
         `
         
+<<<<<<< HEAD
         <div class="card" style="width: 15rem;">
         <h5 class="card-title">${element.descripcion}</h5>
         
@@ -19,11 +33,22 @@ const obtener = async () => {
           <a href="#" class="btn btn-primary" onclick="agregar(${index})">Agregar</a>
         </div>
         </div>
+=======
+        <div class="card" style="width: 18rem;">
+        <h5 class="card-title">${element.descripcion}</h5>
+        <img src="${element.imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <a href="#" class="btn btn-primary">Agregar</a>
+        </div>
+      </div>
+   
+>>>>>>> ace91b87b4e8a1b8eb69ebd9628ea585ecf19eb9
        `
       columnas.push(columna)
         
     });
 
+<<<<<<< HEAD
     document.getElementById("insumo").innerHTML = columnas.join('')
 }
 
@@ -76,3 +101,9 @@ function agregar(indice){
 }
 
 
+=======
+    document.getElementById("catalogo").innerHTML = columnas.join('')
+}
+
+obtener()
+>>>>>>> ace91b87b4e8a1b8eb69ebd9628ea585ecf19eb9
