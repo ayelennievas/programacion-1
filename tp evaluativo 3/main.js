@@ -9,10 +9,10 @@ function guardar(){
 
     let insumo = new Insumo(descripcion,precio,imagen,categoria)
 
-    insumo.guardar_producto()
+    insumo.guardar_insumo()
 }
 
-document.getElementById("btn-guardar").addEventListener("click",guardar)
+document.getElementById("btnguardar").addEventListener("click",guardar)
 
 function listar(){
 
@@ -29,6 +29,12 @@ function eliminarinsumo(){
     let insumo = new Insumo()
 
     insumo.eliminar_insumo(indice)
+
+    const truck_modal = document.querySelector('#mymodal')
+
+    const modal = bootstrap.Modal.getInstance(truck_modal) 
+
+    modal.hide()
 }
 
 document.getElementById("btn_eliminar").addEventListener("click",eliminarinsumo)

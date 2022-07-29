@@ -13,12 +13,12 @@ function editar(indice){
 
     document.getElementById("inp-url").value = lista_insumos[indice].imagen
 
-    document.getElementById("slt_categoria").value = lista_insumos[indice].categoria
+    document.getElementById("slt-categoria").value = lista_insumos[indice].categoria
 
     localStorage.setItem("indice",indice)
 
     //apago el boton
-    document.getElementById("btn-guardar").style.display = "none"
+    document.getElementById("btnguardar").style.display = "none"
 
     //encendemos el boton actualizar
     document.getElementById("btn_refrescar").style.display = "block"
