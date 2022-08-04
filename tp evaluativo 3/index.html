@@ -10,17 +10,27 @@
     <script src="bootstrap.bundle.min.js"></script>
 </head>
 
-<body style="background-color: deepskyblue;">
+<body background="fondouñas.jpg">
 
-    <nav class="navbar navbar-dark" style="background-color:deeppink;">
-        <div class="container-fluid">
-          <a class="navbar-brand">Insumos de Uñas</a>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar insumos" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light"  style="background-color:deeppink;" >
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Insumos para uñas</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index2.html">Hace tu pedido</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 
     <br>
 
@@ -73,10 +83,10 @@
         </div>
         <div class="col-lg-6">
 
-            <table class="table table-primary">
+            <table class="table table-dark table-striped">
 
                 <thead>
-                  <tr class="table-danger" >
+                  <tr>
                       <th>Nº</th>
                       <th>Descripcion</th>
                       <th>Precio</th>
@@ -96,7 +106,7 @@
 
     </div>
 
-    <button id="btnguardar" class="btn btn-outline-success">Guardar</button>
+    <button id="btnguardar" class="btn btn-outline-danger">Guardar</button>
     <button style="display:none;" id="btn_refrescar" class="btn btn-outline-dark">Actualizar</button>
 
     </div>
